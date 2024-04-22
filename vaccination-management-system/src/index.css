@@ -1,0 +1,30 @@
+
+element.style {
+  font-family: sans-serif;
+}
+
+.nav {
+  transition: -webkit-backdrop-filter 0.3s ease;
+  transition: backdrop-filter 0.3s ease;
+  transition: backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease;
+  display: flex;
+  background-color: rgba(11, 121, 230, 0.767);
+  padding: 0px;
+  justify-content: center;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 10px 10px rgba(0, 20, 50, 0.1);
+  min-height: 50px;
+  width: 100vw;
+  align-items: center;
+  margin-top: -6px;
+  margin-left: -8px;
+  
+}
+
+:host, :root {
+  --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+  font-family: sans-serif;
+}

@@ -1,0 +1,177 @@
+.loginBackground {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('https://www.gannett-cdn.com/-mm-/70b4cd59be29df8697308165711948ed641c0add/c=0-111-2119-1303/local/-/media/2020/06/03/USATODAY/usatsports/coronavirus-vaccine-bottles.jpg?width=2119&height=1192&fit=crop&format=pjpg&auto=webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+
+.login-boxv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80b8d0 50%, #ffffff 100%);
+
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(216, 216, 217, 0.949);
+  border-radius: 10px;
+}
+
+.login-boxv h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-boxv .user-boxv {
+  position: relative;
+}
+
+.login-boxv .user-boxv input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-boxv .user-boxv label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-boxv .user-boxv input:focus ~ label,
+.login-boxv .user-boxv input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #b0c4de; 
+  font-size: 12px;
+}
+
+.login-boxv form button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%); 
+  color: #efebeb;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  margin-left: 20px;
+  letter-spacing: 4px;
+  border-radius: 5px;
+}
+
+.login-boxv button:hover {
+  background: #87ceeb; 
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #f0eeee,
+              0 0 25px #f0eeee,
+              0 0 50px #f0eeee,
+              0 0 100px #f0eeee;
+}
+
+.login-boxv button span {
+  position: absolute;
+  display: block;
+}
+
+.login-boxv button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #82c4ec);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-boxv button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #87cefa);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-boxv button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #87cefa);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-boxv button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #87cefa);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}

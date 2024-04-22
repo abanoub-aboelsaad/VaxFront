@@ -1,0 +1,93 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,600");
+
+.nav {
+	transition: backdrop-filter 0.3s ease;
+	display: flex;
+	background-color: rgba(11, 121, 230, 0.767);
+	padding: 0px;
+	justify-content: center;
+	z-index: 1;
+	backdrop-filter: blur(2px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	box-shadow: 1px 10px 10px rgba(0, 20, 50, 0.1);
+	min-height: 50px;
+	width: 100vw;
+	align-items: center;
+}
+
+.nav:hover {
+	backdrop-filter: blur(8px);
+}
+
+.nav a {
+	z-index: 2;
+	transition: border 0.2s ease;
+	text-decoration: none;
+	color: white;
+	padding: 15px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	margin-left: 5px;
+	border: 1px solid rgba(255, 255, 255, 0);
+	border-radius: 999px;
+}
+
+.nav a:hover {
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 999px;
+	backdrop-filter: blur(8px);
+}
+
+/* h1 {
+	margin: 50px;
+	font-size: 50px;
+	font-weight: 600;
+} */
+
+/* button {
+	transition: backdrop-filter 0.3s ease;
+	font-family: poppins;
+	margin-left: 50px;
+	border: none;
+	border-radius: 9999px;
+	padding: 10px 32px;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: rgba(200, 210, 250, 0.2);
+	backdrop-filter: blur(2px);
+	color: white;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+button:hover {
+	backdrop-filter: blur(8px);
+} */
+
+/* p {
+	margin: 50px;
+	margin-top: -50px;
+	margin-bottom: 30px;
+}  */
+
+
+
+.nav {
+  transition: -webkit-backdrop-filter 0.3s ease;
+  transition: backdrop-filter 0.3s ease;
+  transition: backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease;
+  display: flex;
+  background-color: rgba(11, 121, 230, 0.767);
+  padding: 0px;
+  justify-content: center;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 10px 10px rgba(0, 20, 50, 0.1);
+  min-height: 50px;
+  width: 100vw;
+  align-items: center;
+  margin-top: -10px;
+  margin-left: -8px;
+}
